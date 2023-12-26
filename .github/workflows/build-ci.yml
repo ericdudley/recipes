@@ -1,4 +1,6 @@
 name: Build Website
+permissions:
+  contents: write
 on:
   push:
     branches-ignore:
