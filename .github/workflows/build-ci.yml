@@ -1,0 +1,25 @@
+name: Build Website
+on:
+  push:
+    branches-ignore:
+      - gh-pages
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository code
+        uses: actions/checkout@v2
+      - name: Install and Build 🔧
+        run: |
+          wget -O pandoc.deb https://github.com/jgm/pandoc/releases/download/2.13/pandoc-2.13-1-amd64.deb
+          sudo dpkg -i pandoc.deb
+      - name: Build for production
+        run: make build
+      - name: Create CNAME file
+        run: echo "recipes.ericdudley.com" > ./build/CNAME
+      - name: Deploy
+        if: ${{ github.ref == 'refs/heads/main' }}
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./_site
