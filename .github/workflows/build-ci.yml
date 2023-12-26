@@ -19,7 +19,7 @@ jobs:
       - name: Build for production
         run: make build
       - name: Create CNAME file
-        run: echo "recipes.ericdudley.com" > ./build/CNAME
+        run: echo "recipes.ericdudley.com" > ./_site/CNAME
       - name: Deploy
         if: ${{ github.ref == 'refs/heads/main' }}
         uses: peaceiris/actions-gh-pages@v3
