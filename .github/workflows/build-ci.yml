@@ -6,6 +6,9 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+    env:
+      TERM: xterm
+      TZ: Europe/Berlin
     steps:
       - name: Check out repository code
         uses: actions/checkout@v2
