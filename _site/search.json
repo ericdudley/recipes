@@ -1,5 +1,6 @@
 [
 {"category":"Baking","description":"A moist and delicious banana bread, perfect for breakfast or as a snack.","htmlfile":"banana_bread.html","size":"1 loaf","sweet":"✓","time":"60 minutes","title":"Banana Bread","veggie":"✓"}
+,{"category":"Sides","description":"A delicious side dish to bring to a potluck or holiday dinner.","htmlfile":"cheesy_hashbrowns.html","size":"Serves 8-10","sweet":"✗","time":"1 hour","title":"Lisa’s Cheesy Hashbrowns","veggie":"✓"}
 ,{"category":"Baking","description":"Chocolate Chompers are rich, chewy cookies with a delightful crunch, perfect for satisfying a sweet tooth.","htmlfile":"chocolate_chompers.html","size":"Makes about 24 cookies","sweet":"✓","time":"22 minutes","title":"Chocolate Chompers","veggie":"✗"}
 ,{"category":"Main Dish","description":"A hearty clam chowder, perfect for a cold winter day.","htmlfile":"clam_chowder.html","size":"1 pot","time":"20 minutes","title":"Clam Chowder"}
 ,{"category":"Baking","description":"A traditional Greek butter cookie, perfect for dipping in coffee or tea.","htmlfile":"greek_butter_cookies.html","size":"1 batch","sweet":"✓","time":"30 minutes","title":"Greek Butter Cookies (Koulourakia)","veggie":"✓"}
